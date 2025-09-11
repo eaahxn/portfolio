@@ -10,7 +10,7 @@ import './css/main.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Header />
       <main>
         <Routes>
