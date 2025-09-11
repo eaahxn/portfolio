@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+:root {
+  --background: #FFFDF5;
+  --foreground: #2c2c2c;
+  --neutral-50: #ffffff;
+  --neutral-100: #fcf8e9;
+  --neutral-200: #e0dedc;
+  --neutral-300: #c7c5c2;
+  --neutral-400: #a09d99;
+  --neutral-500: #7a766f;
+  --neutral-600: #59554e;
+  --neutral-700: #403c36;
+  --neutral-800: #2c2823;
+  --neutral-900: #1a1713;
+  --point-50:  #fff7ed;
+  --point-100: #ffedd5;
+  --point-500: #f97316;
+  --point-600: #ea580c;
+  --point-900: #7c2d12;
+}
+
+.dark {
+  --background: #17171c;
+  --foreground: #f9f9f9;
+  --neutral-50: #17171b;
+  --neutral-100: #201f27;
+  --neutral-200: #2e2e39;
+  --neutral-300: #585858;
+  --neutral-400: #808080;
+  --neutral-500: #a3a3a3;
+  --neutral-600: #bfbfbf;
+  --neutral-700: #d9d9d9;
+  --neutral-800: #e6e6e6;
+  --neutral-900: #f2f2f2;
+  --point-50: #172038;
+  --point-100: #1a2c4d;
+  --point-500: #3b82f6;
+  --point-600: #60a5fa;
+  --point-900: #93c5fd;
+}
+
+body {background: var(--background);}
+.header {display: flex; align-items: center; justify-content: space-between; padding: 2vw 10vw; position: sticky; top: 0; z-index: 99; background: var(--background);}
+.header > * {flex: 1 1 0;}
+.header .logo {color: var(--neutral-900); font-size: 1.75rem; font-weight: 700; letter-spacing: .05rem;}
+.header nav {display: flex; gap: 3rem; justify-content: center;}
+.header nav a {font-size: 1.25rem; font-weight: 500; color: var(--neutral-400);}
+.header nav a.active {color: var(--neutral-900);}
+.header .darkmode {display: flex; justify-content: flex-end;}
+.header .darkmode button {background: none; outline: none; border: none; cursor: pointer; color: var(--neutral-800); position: relative;}
+.header .darkmode button::before {content: ""; width: 2.75rem; height: 2.75rem; border-radius: 100%; background: var(--neutral-100); position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: -1; opacity: 0; transition: opacity .3s;}
+.header .darkmode button:hover::before {opacity: 1;}
+
+main {min-height: calc(100vh - 26px - 8vw); padding: 2vw 10vw;}
+
+footer p {text-align: center; color: var(--neutral-500); font-size: .9375rem; padding: 2vw 10vw;}
