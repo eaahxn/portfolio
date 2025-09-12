@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/About";
@@ -14,8 +14,11 @@ function App() {
       <Header />
       <main>
         <Routes>
+          {/* 기본 진입 시 /work로 리다이렉트 */}
+          <Route path="/" element={<Navigate to="/work" replace />} />
+          
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<Projects />} />
+          <Route path="/work" element={<Projects />} />
         </Routes>
       </main>
       <Footer />
@@ -23,4 +26,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

@@ -17,7 +17,7 @@ function Header() {
     <header className="header">
       <h1 className="logo">AHyeon.</h1>
       <nav className="nav">
-        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink to="/work" className={({ isActive }) => (isActive ? "active" : "")}>
           work
         </NavLink>
         <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
