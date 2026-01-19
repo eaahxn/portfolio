@@ -55,3 +55,10 @@ body {background: var(--background);}
 main {min-height: calc(100vh - 26px - 8vw); padding: 2vw 10vw;}
 
 footer p {text-align: center; color: var(--neutral-500); font-size: .9375rem; padding: 2vw 10vw;}
+
+
+@media (max-width: 768px) {
+  html, body {font-size: 90%;}
+  .header,
+  main {padding: 2vw 5vw;}
+}
