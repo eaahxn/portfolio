@@ -109,7 +109,7 @@ const projects = [
         imgCnt01: '/portfolio/img/donggukss/cnt01.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'http://210.94.190.113/'
+        url: 'http://210.94.190.113/',
     },
 ];
 
