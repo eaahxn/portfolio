@@ -45,14 +45,14 @@ function ProjectDetail() {
 
                 <ul className="info">
                     <li>
-                    <div className="tit">주요 기술.</div>
-                    <div className="cont">
-                        <b>{project.stack}</b>
-                    </div>
+                        <div className="tit">주요 기술.</div>
+                        <div className="cont">
+                            <b>{project.stack}</b>
+                        </div>
                     </li>
                     <li>
-                    <div className="tit">기여도.</div>
-                    <div className="cont">{project.attribution}</div>
+                        <div className="tit">기여도.</div>
+                        <div className="cont">{project.attribution}</div>
                     </li>
                 </ul>
 
@@ -92,9 +92,10 @@ function ProjectDetail() {
             <nav className={`cnt_controls ${showControls ? "show" : ""}`}>
                 <ul>
                     <li>
-                        {prevProject && (
-                        <button onClick={() => navigate(`/work/${prevProject.id}`)} className="tooltip" data-tooltip={`${prevProject.title}`}>
+                        {nextProject && (
+                        <button onClick={() => navigate(`/work/${nextProject.id}`)} className="tooltip" data-tooltip={`${nextProject.title}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1a1713"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                            
                         </button>
                         )}
 
@@ -102,8 +103,8 @@ function ProjectDetail() {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1a1713"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
                         </Link>
 
-                        {nextProject && (
-                        <button onClick={() => navigate(`/work/${nextProject.id}`)} className="tooltip" data-tooltip={`${nextProject.title}`}>
+                        {prevProject && (
+                        <button onClick={() => navigate(`/work/${prevProject.id}`)} className="tooltip" data-tooltip={`${prevProject.title}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1a1713"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
                         </button>
                         )}

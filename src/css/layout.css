@@ -43,14 +43,33 @@
 body {background: var(--background);}
 .header {display: flex; align-items: center; justify-content: space-between; padding: 2vw 10vw; position: sticky; top: 0; z-index: 99; background: var(--background);}
 .header > * {flex: 1 1 0;}
-.header .logo {color: var(--neutral-900); font-size: 1.75rem; font-weight: 700; letter-spacing: .05rem;}
+.header .logo a {color: var(--neutral-900); font-size: 1.75rem; font-weight: 700; letter-spacing: .05rem;}
 .header nav {display: flex; gap: 3rem; justify-content: center;}
 .header nav a {font-size: 1.25rem; font-weight: 500; color: var(--neutral-400);}
 .header nav a.active {color: var(--neutral-900);}
-.header .darkmode {display: flex; justify-content: flex-end;}
-.header .darkmode button {background: none; outline: none; border: none; cursor: pointer; color: var(--neutral-800); position: relative;}
-.header .darkmode button::before {content: ""; width: 2.75rem; height: 2.75rem; border-radius: 100%; background: var(--neutral-100); position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: -1; opacity: 0; transition: opacity .3s;}
-.header .darkmode button:hover::before {opacity: 1;}
+
+/* 다크모드 */
+.darkmode {display: flex; justify-content: flex-end;}
+.darkmode-toggle {display: flex; justify-content: center; align-items: center; position: relative; width: 50px; height: 50px; background-color: var(--neutral-100); border: none; border-radius: 50%; overflow: hidden; cursor: pointer; transition: background-color 0.5s;}   
+.darkmode-toggle .ico {display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; position: absolute; transform-origin: 50% 200%; }
+.darkmode-toggle .ico > svg {fill: var(--neutral-700); transition: fill 0.3s ease; transform: scale(.8); transition: .3s;}
+.darkmode-toggle:hover svg {fill: var(--point-500); transform: scale(.95);}
+.darkmode-toggle .sun {animation: rise-animation 0.5s ease-in-out forwards;}
+.darkmode-toggle .moon {animation: set-animation 0.5s ease-in-out forwards;}
+.dark .darkmode-toggle .sun {animation: set-animation 0.5s ease-in-out forwards;}
+.dark .darkmode-toggle .moon {animation: rise-animation 0.5s ease-in-out forwards;}
+
+@keyframes rise-animation {
+  from {transform: rotate(180deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes set-animation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+}
+
+
 
 main {min-height: calc(100vh - 26px - 8vw); padding: 2vw 10vw;}
 
