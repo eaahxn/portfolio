@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="header">
-      <h1 className="logo"><a href="/">AHyeon.</a></h1>
+      <h1 className="logo"><a href="/portfolio/work">AHyeon.</a></h1>
       <nav className="nav">
         <NavLink to="/work" className={({ isActive }) => (isActive ? "active" : "")}>
           work
