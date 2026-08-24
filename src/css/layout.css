@@ -23,7 +23,7 @@
 .dark {
   --background: #17171c;
   --foreground: #f9f9f9;
-  --neutral-50: #17171b;
+  --neutral-50: #212121;
   --neutral-100: #201f27;
   --neutral-200: #2e2e39;
   --neutral-300: #585858;
@@ -41,7 +41,7 @@
 }
 
 body {background: var(--background);}
-.header {display: flex; align-items: center; justify-content: space-between; padding: 2vw 10vw; position: sticky; top: 0; z-index: 99; background: var(--background);}
+.header {display: flex; align-items: center; justify-content: space-between; padding: 1vw 6vw; position: sticky; top: 0; z-index: 99; background: var(--background);}
 .header > * {flex: 1 1 0;}
 .header .logo a {color: var(--neutral-900); font-size: 1.75rem; font-weight: 700; letter-spacing: .05rem;}
 .header nav {display: flex; gap: 3rem; justify-content: center;}
@@ -50,10 +50,10 @@ body {background: var(--background);}
 
 /* 다크모드 */
 .darkmode {display: flex; justify-content: flex-end;}
-.darkmode-toggle {display: flex; justify-content: center; align-items: center; position: relative; width: 50px; height: 50px; background-color: var(--neutral-100); border: none; border-radius: 50%; overflow: hidden; cursor: pointer; transition: background-color 0.5s;}   
+.darkmode-toggle {display: flex; justify-content: center; align-items: center; position: relative; width: 45px; height: 45px; background-color: var(--neutral-100); border: none; border-radius: 50%; overflow: hidden; cursor: pointer; transition: background-color 0.5s;}   
 .darkmode-toggle .ico {display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; position: absolute; transform-origin: 50% 200%; }
-.darkmode-toggle .ico > svg {fill: var(--neutral-700); transition: fill 0.3s ease; transform: scale(.8); transition: .3s;}
-.darkmode-toggle:hover svg {fill: var(--point-500); transform: scale(.95);}
+.darkmode-toggle .ico > svg {fill: var(--neutral-700); transition: fill 0.3s ease; transform: scale(.7); transition: .3s;}
+.darkmode-toggle:hover svg {fill: var(--point-500); transform: scale(.85);}
 .darkmode-toggle .sun {animation: rise-animation 0.5s ease-in-out forwards;}
 .darkmode-toggle .moon {animation: set-animation 0.5s ease-in-out forwards;}
 .dark .darkmode-toggle .sun {animation: set-animation 0.5s ease-in-out forwards;}
@@ -71,9 +71,9 @@ body {background: var(--background);}
 
 
 
-main {min-height: calc(100vh - 26px - 8vw); padding: 2vw 10vw;}
+main {min-height: calc(100vh - 26px - 8vw); padding: 2vw 6vw;}
 
-footer p {text-align: center; color: var(--neutral-500); font-size: .9375rem; padding: 2vw 10vw;}
+footer p {text-align: center; color: var(--neutral-500); font-size: .9375rem; padding: 2vw 6vw;}
 
 
 @media (max-width: 768px) {

@@ -17,7 +17,7 @@ const projects = [
         imgCnt03: '/portfolio/img/dongguk/cnt03.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 25% / 퍼블리싱 25%',
-        url: 'https://www.dongguk.edu',
+        // url: 'https://www.dongguk.edu',
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const projects = [
         imgCnt03: '/portfolio/img/wiseipsi/cnt03.jpg',
         stack: 'HTML, CSS, JS',
         attribution: '퍼블리싱 100%',
-        url: 'https://ipsi.dongguk.ac.kr',
+        // url: 'https://ipsi.dongguk.ac.kr',
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const projects = [
         imgCnt03: '/portfolio/img/donggukcampus/cnt03.jpg',
         stack: 'HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'https://www.dongguk.edu/campus/map/seoul',
+        // url: 'https://www.dongguk.edu/campus/map/seoul',
     },
     {
         id: 6,
@@ -59,7 +59,7 @@ const projects = [
         imgCnt03: '/portfolio/img/dgfca/cnt03.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'https://dgfca.or.kr/',
+        // url: 'https://dgfca.or.kr/',
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ const projects = [
         imgCnt03: '/portfolio/img/dtmuseum/cnt03.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'https://www.dtmuseum.org/',
+        // url: 'https://www.dtmuseum.org/',
     },
     {
         id: 8,
@@ -81,7 +81,7 @@ const projects = [
         imgCnt03: '/portfolio/img/dtx/cnt03.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'https://dtx.kbri.re.kr/main',
+        // url: 'https://dtx.kbri.re.kr/main',
     },
     {
         id: 9,
@@ -92,15 +92,20 @@ const projects = [
         imgCnt03: '/portfolio/img/daegusbc/cnt03.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'https://sbc.daegu.ac.kr/',
+        // url: 'https://sbc.daegu.ac.kr/',
+        txt1: '반도체 인재를 향한 여정, \n반도체부트캠프사업단이 새로워졌습니다.',
+        txt2: '사용자 중심의 직관적인 UX를 통해 \n사업단 소식을 가장 편하게 만날 수 있습니다.',
     },
     {
         id: 10,
-        title: '대구대학교 CMS',
+        title: '대구대학교 CMS(C타입)',
         imgSrc: '/portfolio/img/daegucms/thum.jpg',
         imgCnt01: '/portfolio/img/daegucms/cnt01.jpg',
         stack: 'Figma, HTML, CSS, JS',
-        attribution: '디자인 25% / 퍼블리싱 25%',
+        attribution: '디자인 100% / 퍼블리싱 100%',
+        txt1: '부드럽고 직관적인 UI, \n대구대학교 CMS의 새로운 기준.',
+        txt2: '기존의 답답했던 레이아웃을 정돈하고, \n라운드 모티프 중심의 스타일을 적용하여 \n한눈에 들어오는 명확한 UX 경험을 제공합니다.',
+        txt3: '학생과 사용자가 원하는 메뉴에 빠르게 다가갈 수 있도록 \n기존의 불필요한 동선을 최소화하고 편의성을 대폭 개선하였습니다.',
     },
     {
         id: 11,
@@ -108,9 +113,13 @@ const projects = [
         imgSrc: '/portfolio/img/donggukss/thum.jpg',
         imgCnt01: '/portfolio/img/donggukss/cnt01.jpg',
         imgCnt02: '/portfolio/img/donggukss/cnt02.jpg',
+        imgCnt03: '/portfolio/img/donggukss/cnt03.jpg',
         stack: 'Figma, HTML, CSS, JS',
         attribution: '디자인 100% / 퍼블리싱 100%',
-        url: 'https://summer.dongguk.edu/main',
+        // url: 'https://summer.dongguk.edu/main',
+        txt1: '더 쉽고 명확한 연결, \n글로벌 캠퍼스 라이프의 새로운 기준.',
+        txt2: '기존 사이트의 복잡했던 지원 절차를 간소화하고, \n브랜드 고유의 인상을 일관되게 전달하여 \n국제 학생 모두에게 명확한 UX 경험을 제공합니다.',
+        txt3: '이번 리뉴얼은 단순한 안내 페이지 역할을 넘어, \n학생들이 캠퍼스에 처음 오며 느끼는 불편함들을 \n하나씩 쉽게 풀어나갈 수 있도록 개선하였습니다.',
     },
 ];
 
